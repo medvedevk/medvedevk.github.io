@@ -1,0 +1,154 @@
+.description-part {
+  width: 100%;
+}
+
+.description-part__wrap {
+  @include global-wrap;
+  @include flex-column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  position: relative;
+
+  &--photo {
+    margin: 0 auto;
+    margin-bottom: 3px;
+  }
+
+  &--form {
+    margin-bottom: 3px;
+  }
+}
+
+.description-part__head {
+  font-size: 18px;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  letter-spacing: 0.1px;
+
+  &--form {
+    margin-top: 37px;
+  }
+}
+
+.description-part__reasons {
+  font-size: 14px;
+  font-weight: 400;
+  width: 285px;
+  margin-top: 27px;
+  letter-spacing: 0.2px;
+
+  &--form {
+    line-height: 24px;
+  }
+
+  &--photo {
+    margin-top: 24px;
+    letter-spacing: 0;
+    position: relative;
+    line-height: 24px;
+    padding-bottom: 5px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: rgb(103, 143, 168);
+      bottom: -23px;
+      left: -20px;
+    }
+  }
+}
+
+.description-part__triangle-320 {
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+  z-index: 100;
+}
+
+@media (min-width: $tablet-width) {
+  .description-part__wrap {
+    &--main {
+      margin-bottom: 35px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--photo {
+      padding-top: 25px;
+    }
+  }
+
+  .description-part__head {
+    width: 460px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    margin-top: 50px;
+
+    &--photo {
+      font-size: 30px;
+      letter-spacing: 0.4px;
+    }
+
+    &--form {
+      font-size: 30px;
+      letter-spacing: 0.4px;
+      margin-top: 75px;
+    }
+  }
+
+  .description-part__reasons {
+    width: 520px;
+    margin-top: 29px;
+    letter-spacing: 0.1px;
+
+    &--photo {
+      width: 450px;
+      margin-bottom: 63px;
+      position: relative;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--form {
+      width: 450px;
+    }
+  }
+
+  .description-part__triangle-320 {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-part__wrap {
+    &--photo {
+      padding-top: 60px;
+    }
+  }
+
+  .description-part__head {
+    &--form {
+      margin-top: 113px;
+    }
+  }
+
+  .description-part__reasons {
+    &--photo {
+      margin-top: 31px;
+    }
+  }
+}

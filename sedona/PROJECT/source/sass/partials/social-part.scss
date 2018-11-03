@@ -1,0 +1,60 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.social__item {
+  @include theme-color;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  position: relative;
+  margin: 0 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(102, 158, 192);
+  }
+
+  &:active {
+    background-color: rgb(84, 150, 189);
+  }
+
+  &:active .social__link--twitter-ico {
+    fill: rgb(136, 182, 209);
+  }
+
+  &:active .social__link--facebook-ico {
+    fill: rgb(136, 182, 209);
+  }
+
+  &:active .social__link--youtube-ico {
+    fill: rgb(136, 182, 209);
+  }
+}
+
+.social__link--twitter-ico,
+.social__link--facebook-ico,
+.social__link--youtube-ico {
+  position: absolute;
+  content: "";
+  top: 50%;
+  margin-top: -9px;
+  left: 50%;
+  margin-left: -9px;
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+}
+
+.social__link--facebook-ico {
+  margin-top: -12px;
+  margin-left: -5px;
+}
+
+.social__link--youtube-ico {
+  margin-top: -7px;
+  margin-left: -9px;
+}

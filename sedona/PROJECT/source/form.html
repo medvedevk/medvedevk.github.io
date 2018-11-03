@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEDONA: Form Page</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <svg style="display: none">
+      <symbol>
+        <svg id="icon-cross" viewBox="0 0 22 22" width="22" height="22px">
+          <polygon fill="white" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1" />
+        </svg>
+      </symbol>
+      <symbol>
+        <svg id="icon-menu" viewBox="0 0 23 22" width="23" height="22">
+          <g fill="rgb(129, 179, 210)">
+            <rect width="22.928" height="3.964" />
+            <rect y="9.009" width="22.928" height="3.964" />
+            <rect y="18.018" width="22.928" height="3.964" />
+          </g>
+        </svg>
+      </symbol>
+      <symbol>
+        <svg id="academy" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+        </svg>
+      </symbol>
+      <symbol>
+        <svg id="icon-twitter" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
+          <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+          </g>
+        </svg>
+      </symbol>
+      <symbol>
+        <svg id="icon-facebook" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944">
+          <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+        </svg>
+      </symbol>
+      <symbol>
+        <svg id="icon-youtube" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
+          <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+        </svg>
+      </symbol>
+    </svg>
+    <div class="page-wrap">
+      <header class="page-header">
+        <div class="container page-header__wrap">
+          <nav class="main-nav main-nav--close main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><svg class="main-nav__toggle-close" width="22" height="22"><use xlink:href="#icon-cross"></use></svg><svg class="main-nav__toggle-open" width="23" height="22"><use xlink:href="#icon-menu"></use></svg> Развернуть меню</button>
+            <div class="main-naw__wrap">
+              <ul class="main-nav__list nav-group">
+                <li class="nav-group__item nav-group__item--active">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li class="nav-group__item nav-group__item--right">
+                  <a href="photo.html">Фото и видео</a>
+                </li>
+                <li class="nav-group__item">
+                  <a>Форма отзыва</a>
+                </li>
+                <li class="nav-group__item">
+                  <a href="https://up.htmlacademy.ru">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="SEDONA" width="104" height="84">
+            </picture>
+          </a>
+        </div>
+      </header>
+      <main class="page-main">
+          <section class="welcome-part welcome-part--short">
+            <div class="welcome-part__wrap welcome-part__wrap--short">
+              <img class="welcome-part__text-short" src="img/text-sedona.svg" width="235" height="50" alt="Sedona">
+              <div class="welcome-part__triangle-320">
+                <svg width="320" height="200" fill="white">
+                  <polygon points="160,200 320,200, 320,173"/>
+                  <polygon points="0,200 160,200, 0,173"/>
+                </svg>
+              </div>
+              <div class="welcome-part__triangle-768">
+                <svg width="768" height="200" fill="white">
+                  <polygon points="384,200 734,142, 734,165 768,162, 768,200"/>
+                  <polygon points="384,200 35,142, 35,165 0,162, 0,200"/>
+                </svg>
+              </div>
+              <div class="welcome-part__triangle-1200">
+                <svg width="1200" height="200" fill="white">
+                  <polygon points="600,200 951,142, 951,165 1200,142 1200,200"/>
+                  <polygon points="600,200 249,142, 249,165 0,142, 0,200"/>
+                </svg>
+              </div>
+            </div>
+          </section>
+          <section class="description-part">
+            <div class="description-part__wrap description-part__wrap--form">
+              <h2 class="description-part__head description-part__head--form">Оставьте свой отзыв</h2>
+              <p class="description-part__reasons description-part__reasons--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+          </section>
+          <form class="general-form response-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="general-form__wrap">
+              <div class="general-form__section tell-me-name">
+                <h2 class="general-form__head">Представьтесь:</h2>
+                <div class="tell-me-name__key-field">
+                  <label for="name">Имя<sup>*</sup>:</label>
+                  <input class="general-form__name" type="text" id="name" name="f-name" required placeholder="Петр">
+                </div>
+                <div class="tell-me-name__key-field">
+                  <label for="surname">Фамилия<sup>*</sup>:</label>
+                  <input class="general-form__name" type="text" id="surname" name="s-name" required placeholder="Иванов">
+                </div>
+                <div class="tell-me-name__key-field">
+                  <label for="mid-name">Отчество:</label>
+                  <input class="general-form__name" type="text" id="mid-name" name="mid-name" placeholder="Александрович">
+                </div>
+              </div>
+              <div class="general-form__section tell-me-phone">
+                <h2 class="general-form__head general-form__head--phone">Контактная информация:</h2>
+                <label for="phone" class="tell-me-phone__labe"><span>Контактный</span> телефон<sup>*</sup>:</label>
+                <input class="general-form__number" type="tel" id="phone" name="phone" required placeholder="Введите телефон">
+                <label for="mail" class="tell-me-phone__labe tell-me-phone__labe--mail">Электронная почта<sup>*</sup>:</label>
+                <input class="general-form__number general-form__number--mail" type="email" id="mail" name="mail" required placeholder="Введите e-mail">
+              </div>
+              <div class="general-form__section tell-me-feel">
+                <h2 class="general-form__head general-form__head--feel">Ваше общее впечатление:</h2>
+                <input class="general-form__radio good-feel" type="radio" id="good" name="feel" checked>
+                <label class="general-form__radio-label" for="good">Скорее положительное</label>
+                <input class="general-form__radio bad-feel" type="radio" id="bad" name="feel">
+                <label class="general-form__radio-label" for="bad">Скорее отрицательное</label>
+                <input class="general-form__radio none-feel" type="radio" id="neutral" name="feel">
+                <label class="general-form__radio-label" for="neutral">Затрудняюсь ответить</label>
+              </div>
+              <div class="general-form__section tell-me-places">
+                <h2 class="general-form__head general-form__head--places">Посещенные достопримечательности:</h2>
+                <div class="tell-me-places__squad">
+                  <input type="checkbox" class="general-form__checkbox" id="bridge" name="bridge" checked>
+                  <label class="general-form__check-label" for="bridge">Мост Дьявола</label>
+                  <input type="checkbox" class="general-form__checkbox" id="bell" name="bell" checked>
+                  <label class="general-form__check-label general-form__check-label--bell" for="bell">Гора-Колокол</label>
+                  <input type="checkbox" class="general-form__checkbox" id="park" name="park" checked>
+                  <label class="general-form__check-label" for="park">Слайд-парк</label>
+                  <input type="checkbox" class="general-form__checkbox" id="rock" name="rock">
+                  <label class="general-form__check-label" for="rock">Красные скалы</label>
+                </div>
+              </div>
+              <div class="general-form__section tell-me-emo">
+                <h2 class="general-form__head">Опишите свои эмоции:</h2>
+                <textarea name="emotion" id="emotion" class="general-form__textarea" rows="4" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
+              <button type="submit" class="general-form__send button">Отправить отзыв</button>
+            </div>
+          </form>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrap">
+          <div class="page-footer__hash-wrap">
+            <div class="page-footer__hash">
+              #VISITSEDONA
+            </div>
+          </div>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--twitter text-hidden" href="https://www.twitter.com" target="_blank"><svg class="social__link--twitter-ico" fill="white"  width="25" height="25"><use xlink:href="#icon-twitter"></use></svg>twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook text-hidden" href="https://www.facebook.com" target="_blank"><svg class="social__link--facebook-ico" fill="white" width="25" height="25"><use xlink:href="#icon-facebook"></use></svg>facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube text-hidden" href="https://www.youtube.com" target="_blank"><svg class="social__link--youtube-ico" fill="white" width="25" height="25"><use xlink:href="#icon-youtube"></use></svg>youtube</a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <div class="copyright__wrap">
+              <b class="copyright__text">Разработано</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="copyright__img" fill="black" width="40" height="40"><use xlink:href="#academy"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal form-success">
+      <h2 class="modal__head">Ваш отзыв отправлен!</h2>
+      <p class="modal__info">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <div class="form-success__btn-back">
+        <button type="button" class="form-success__btn button">закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal form-error">
+      <h2 class="modal__head">Что-то пошло не так!</h2>
+      <p class="modal__info">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <button type="button" class="form-error__btn button">ОК</button>
+    </div>
+    <script src="js/nav-hiding.js"></script>
+    <script src="js/validating.js"></script>
+    <script src="js/picturefill.js"></script>
+  </body>
+</html>

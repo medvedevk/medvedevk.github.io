@@ -1,0 +1,256 @@
+.video-part {
+  width: 100%;
+}
+
+.video-part__wrap {
+  @include flex-column;
+  font-size: 14px;
+  font-weight: 700;
+  width: 320px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  padding-top: 32px;
+  padding-bottom: 42px;
+  align-items: center;
+  position: relative;
+}
+
+.video-part__head {
+  font-size: 18px;
+}
+
+.video-part__info {
+  font-weight: 400;
+  width: 270px;
+  margin-top: 26px;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+
+.video-part__film {
+  margin-top: 17px;
+  width: 320px;
+}
+
+.video-part__control {
+  @include global-wrap;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 65px;
+  background-color: rgb(242, 242, 242);
+  margin-top: -8px;
+}
+
+.video-part__repeat {
+  margin-left: 5px;
+  cursor: pointer;
+  fill: rgb(92, 104, 112);
+
+  &:hover {
+    fill: rgb(51, 51, 51);
+  }
+
+  &:active {
+    fill: rgb(184, 184, 184);
+  }
+}
+
+.video-part__cc {
+  margin-left: 134px;
+  cursor: pointer;
+  fill: rgb(92, 104, 112);
+
+  &:hover {
+    fill: rgb(51, 51, 51);
+  }
+
+  &:active {
+    fill: rgb(184, 184, 184);
+  }
+}
+
+.video-part__expand {
+  margin-left: 30px;
+  cursor: pointer;
+  fill: rgb(92, 104, 112);
+
+  &:hover {
+    fill: rgb(51, 51, 51);
+  }
+
+  &:active {
+    fill: rgb(184, 184, 184);
+  }
+}
+
+.video-part__play {
+  width: 280px;
+  height: 45px;
+  position: absolute;
+  bottom: 105px;
+  left: 50%;
+  margin-left: -140px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-part__play-bar {
+  position: absolute;
+  width: 232px;
+  height: 2px;
+  background-color: rgb(242, 242, 242);
+  bottom: 128px;
+  left: 50%;
+  margin-left: -116px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.video-part__play-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  bottom: 124px;
+  left: 25%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .video-part__wrap {
+    width: 100%;
+    max-width: 648px;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    padding-bottom: 30px;
+  }
+
+  .video-part__head {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+
+  .video-part__info {
+    width: 430px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+  }
+
+  .video-part__film {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .video-part__control {
+    width: 100%;
+    position: absolute;
+    min-height: 92px;
+    bottom: 38px;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .video-part__repeat {
+    margin-left: 15px;
+    fill: white;
+
+    &:hover {
+      fill: rgb(194, 194, 194);
+    }
+
+    &:active {
+      fill: rgb(148, 148, 148);
+    }
+  }
+
+  .video-part__expand {
+    fill: white;
+
+    &:hover {
+      fill: rgb(194, 194, 194);
+    }
+
+    &:active {
+      fill: rgb(148, 148, 148);
+    }
+  }
+
+  .video-part__cc {
+    margin-right: 0;
+    margin-left: 473px;
+    fill: white;
+
+    &:hover {
+      fill: rgb(194, 194, 194);
+    }
+
+    &:active {
+      fill: rgb(148, 148, 148);
+    }
+  }
+
+  .video-part__play {
+    display: none;
+  }
+
+  .video-part__play-bar {
+    position: absolute;
+    width: 394px;
+    height: 2px;
+    background-color: rgb(242, 242, 242);
+    bottom: 83px;
+    left: 50%;
+    margin-left: -235px;
+    z-index: 3;
+  }
+
+  .video-part__play-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: 79px;
+    left: 32%;
+    z-index: 3;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-part__wrap {
+    max-width: 800px;
+    padding-bottom: 75px;
+    padding-top: 35px;
+  }
+
+  .video-part__control {
+    bottom: 83px;
+    min-height: 93px;
+  }
+
+  .video-part__play-bar {
+    width: 540px;
+    height: 2px;
+    bottom: 125px;
+    left: 50%;
+    margin-left: -305px;
+  }
+
+  .video-part__cc {
+    margin-left: 623px;
+  }
+
+  .video-part__play-dot {
+    bottom: 122px;
+    left: 25.5%;
+  }
+}

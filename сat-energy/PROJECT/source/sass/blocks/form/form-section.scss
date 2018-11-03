@@ -1,0 +1,359 @@
+.form-section {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &--cat-info {
+    padding: 10px 0;
+    flex: 1 0 100%;
+
+    @include tablet {
+      padding: 30px 0;
+    }
+
+    @include desktop {
+      padding-bottom: 0;
+      flex: 1 1 44%;
+    }
+  }
+
+  &--choose-program {
+    margin: 0 -20px;
+    padding: 9px 20px;
+    outline: 1px solid $border-grey;
+    flex: 1 0 100%;
+
+    @include tablet {
+      margin: 25px -30px 77px 40px;
+      padding: 12px 30px;
+    }
+
+    @include desktop {
+      margin: 48px 0 27px 80px;
+      flex: 1 1 44%;
+    }
+  }
+}
+
+.form-section__title {
+  position: relative;
+  margin: 30px 0 33px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: normal;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $green 13px, $green 16px, transparent 16px, transparent 100%);
+
+  span {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #ffffff;
+  }
+
+  @include tablet {
+    margin: 62px 0 75px;
+    padding: 0 calc((100vw - 708px) / 2);
+    font-size: 36px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $green 22px, $green 25px, transparent 25px, transparent 100%);
+
+    br {
+      display: none;
+    }
+
+    span {
+      padding: 0 36px;
+    }
+
+    &--extra {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include desktop {
+    margin: 46px 0 60px;
+    padding: 0 calc((100vw - 1300px) / 2);
+
+    &--extra {
+      margin: 48px 0 40px;
+    }
+  }
+}
+
+.form-section--contacts .form-section__title {
+  @include tablet {
+    margin-top: 0;
+  }
+
+  @include desktop {
+    margin-top: 46px;
+  }
+}
+
+.form-section__field {
+  margin: 14px 0;
+
+  @include tablet {
+    margin: 16px 0;
+    padding: 0 40px;
+    padding-bottom: 4px;
+  }
+
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+    width: 570px;
+
+    &--textarea {
+      width: auto;
+    }
+  }
+}
+
+.form-section__item {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.form-section__text,
+.form-section__input,
+.form-section__input::placeholder {
+  font-family: $oswald;
+  line-height: 1.12;
+  text-transform: uppercase;
+
+  @include tablet {
+    line-height: 1;
+  }
+}
+
+.form-section__input--textarea::placeholder {
+  padding-top: 6px;
+}
+
+.form-section__text {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #222222;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    margin-right: 20px;
+  }
+}
+
+.form-section--cat-info .form-section__text {
+  margin-right: 15px;
+}
+
+.form-section__input {
+  display: inline-block;
+  padding: 13px;
+  flex: 1 0 70px;
+  height: 45px;
+  min-width: 177px;
+  color: $darkgrey;
+  border: 1px solid $border-grey;
+  outline: none;
+
+  &:hover {
+    //border-color: #bababa;
+    border-color: $green;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $darkgrey;
+    box-shadow: inset 0 0 0 1px $darkgrey;
+  }
+
+  &:active:invalid,
+  &:focus:invalid,
+  &.invalid {
+    border-color: $red;
+    box-shadow: inset 0 0 0 1px $red;
+  }
+
+  @include tablet {
+    height: 52px;
+    line-height: 1.5;
+    padding: 10px 20px;
+    flex: 1 0 150px;
+  }
+
+  &--textarea {
+    height: 150px;
+    resize: none;
+    font-family: $oswald;
+
+    @include tablet {
+      height: 175px;
+      padding: 15px 20px;
+    }
+
+    @include desktop {
+      margin-top: 16px;
+    }
+  }
+}
+
+.form-section__input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.form-section__input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.form-section__input-wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+
+  .form-section__input {
+    padding-right: 15px;
+  }
+}
+
+.form-section__icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+
+  .form-section__input:active + &,
+  .form-section__input:focus + & {
+    fill: $green;
+  }
+
+  .form-section__input:active:invalid + &,
+  .form-section__input:focus:invalid + &,
+  .invalid + & {
+    fill: $red;
+  }
+}
+
+.form-section__list {
+  @include reset-list;
+
+  &--checks {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 40px;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+}
+
+.form-section__list-item {
+  margin: 12px 0;
+}
+
+.form-section__list--checks .form-section__list-item {
+  @include tablet {
+    width: 325px;
+    margin: 16px 0;
+  }
+
+  @include desktop {
+    width: 245px;
+    margin: 16px 0;
+  }
+}
+
+.form-section__text--radio,
+.form-section__text--checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-grow: 1;
+  margin-right: 0;
+
+  input:disabled + &,
+  &.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border-grey;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    @include tablet {
+      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover::before {
+    //border-color: #bababa;
+    border-color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  input:focus + &::before {
+    border-color: $darkgrey;
+    box-shadow: inset 0 0 0 1px $darkgrey;
+  }
+}
+
+.form-section__text--radio::before {
+  border-radius: 50%;
+}
+
+.form-section__radio:checked + .form-section__text--radio::before {
+  background-image: radial-gradient($green 0, $green 6px, #ffffff 7px, #ffffff 100%);
+
+  @include tablet {
+    background-image: radial-gradient($green 0, $green 9px, #ffffff 10px, #ffffff 100%);
+  }
+}
+
+.form-section__text--checkbox:active::before,
+.form-section__checkbox:checked + .form-section__text--checkbox::before {
+  background: url("../img/vector/icon-tick.svg") no-repeat center;
+  background-size: 21px;
+}
+
+.form-section__checkbox:checked + .form-section__text--checkbox:active::before {
+  background-image: none;
+}

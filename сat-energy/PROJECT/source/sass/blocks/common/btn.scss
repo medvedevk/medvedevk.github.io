@@ -1,0 +1,55 @@
+.btn {
+  display: block;
+  min-height: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #ffffff;
+  line-height: 20px;
+  background-color: $green;
+  min-width: 260px;
+  box-sizing: border-box;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #5eaa2f;
+    color: yellow;
+    transition: all 0.3s ease-in;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.15s ease-in;
+  }
+
+  @include desktop {
+    min-width: 169px;
+  }
+
+  &--grey {
+    color: #000000;
+    background-color: $grey;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 0 auto;
+    width: 100%;
+
+    &:hover {
+      background-color: #ebebeb;
+      color: $green;
+      transition: all 0.3s ease-in;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      transition: color 0.15s ease-in;
+    }
+
+    @include tablet {
+      min-width: 248px;
+    }
+
+    @include desktop {
+      min-width: 169px;
+    }
+  }
+}

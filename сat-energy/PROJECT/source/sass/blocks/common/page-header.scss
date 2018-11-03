@@ -1,0 +1,88 @@
+.page-header {
+  position: relative;
+
+  @include desktop {
+    &--index {
+      z-index: 0;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: calc(50% + #{$desktop-pads});
+        background-color: #63a73a;
+        background-image: url("../img/raster/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        z-index: -1;
+
+        @include retina {
+          background-image: url("../img/raster/index-background-desktop@2x.jpg");
+        }
+      }
+    }
+  }
+}
+
+.page-header__wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-top: 52px;
+  }
+}
+
+.page-header__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 45px;
+  box-sizing: content-box;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-img {
+  width: 33px;
+  height: 38px;
+
+  @include tablet {
+    width: 173px;
+    height: 59px;
+  }
+
+  @include desktop {
+    width: 202px;
+    height: 60px;
+  }
+}
+
+.page-header__logo-title {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  @include tablet {
+    display: none;
+  }
+}
