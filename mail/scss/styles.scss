@@ -1,0 +1,94 @@
+@import "foundation";
+
+//colors
+.no-pd {
+  padding: 0 !important;
+}
+
+.no-pdl {
+  width: 30px !important;
+}
+
+.no-pdsl {
+  width: 31px !important;
+}
+
+.pd {
+  padding-rigth: 20px !important;
+}
+.pb-footer {
+  padding: 0 17px;
+  font-size: 10px !important;
+  line-height: 1.2;
+}
+.no-mg {
+  margin: 0;
+  padding-left: 8px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.description a {
+  text-decoration: underline;
+}
+
+.title-red {
+  color: $red;
+}
+
+.text-blue {
+  color: $primary-color;
+}
+
+.title-book {
+  margin-bottom: 5px !important;
+}
+
+.author-name {
+  font-size: 16px;
+}
+
+
+.link-grey a {
+  color: $black !important;
+  padding-right: 18px;
+
+}
+.shadow-left {
+  padding: 0 !important;
+  width: 54px;
+}
+
+.shadow-top img {
+  width: 550px;
+  padding: 0 15px;
+  margin: 0;
+  text-align: center !important;
+}
+
+.decorative-line {
+  background: #94d4ef;
+  height: 2px;
+}
+
+.decorative-line-p {
+  border-bottom: 2px dotted #ccc;
+  max-width: 270px ;
+  padding-right: 20px ;
+}
+
+.description {
+  line-height: 1.5;
+  padding-right: 20px;
+}
+
+.l-desc {
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+
+
+
