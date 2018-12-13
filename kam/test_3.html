@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test_3</title>
+</head>
+<body>
+    <div class="test_3"></div>
+
+    <script>
+        var test3 = document.querySelector(".test_3");
+        let arr = [];
+        for(let i=1; i<=100; i++) {
+            let kam = i;
+
+            if(i%3 == 0){
+                 kam += " A/B";
+            }
+            if(i%5 == 0) {
+                kam += " Testing"  
+            }
+            arr[i] = kam + "   "; 
+            console.log(kam);
+            
+            kam = 0;
+            
+
+        }
+
+        test3.textContent = arr;
+
+
+        console.log(test3);
+        </script>
+</body>
+</html>
