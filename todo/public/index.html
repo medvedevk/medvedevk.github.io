@@ -10,5 +10,14 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+        fetch('https://aviation-edge.com/v2/public/[ENDPOINT]?key=[2cf13a-d35f2e]')
+        .then((res) => {
+            return res.json();
+        })
+            .then((body) => {
+                console.log(body);
+            });
+    </script>
   </body>
 </html>
