@@ -1,3 +1,3 @@
-import Addcomp from './item-add-form';
+import ItemAddForm from './item-add-form';
 
-export default Addcomp;
+export default ItemAddForm;

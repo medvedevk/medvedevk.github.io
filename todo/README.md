@@ -1,2 +1,2 @@
-Todo Aplication
-------
+Todo Application
+-----
