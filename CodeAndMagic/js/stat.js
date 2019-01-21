@@ -39,6 +39,8 @@ var getMaxElement = function (arr) {
     return max;
 };
 
+
+
 window.renderStatistics = function(ctx, players, times) {
     renderCloud(ctx, ClOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
     renderCloud(ctx, ClOUD_X, CLOUD_Y, '#fff' );
