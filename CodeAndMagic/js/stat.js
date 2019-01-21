@@ -1,7 +1,7 @@
 'use strict';
 
 var CLOUD_WIDTH = 420;
-var CLOUD_HEIGHT = 270;
+var CLOUD_HEIGHT = 280;
 var ClOUD_X = 100;
 var CLOUD_Y = 10;
 var GAP = 10;
@@ -43,7 +43,11 @@ window.renderStatistics = function(ctx, players, times) {
     renderCloud(ctx, ClOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
     renderCloud(ctx, ClOUD_X, CLOUD_Y, '#fff' );
 
+
         ctx.fillStyle = '#000';
+        ctx.font = '16px PT Mono';
+        ctx.fillText('Ура вы победили!', ClOUD_X + FONT_GAP, CLOUD_Y + GAP + TEXT_HEIGHT);
+        ctx.fillText('Список результатов:', ClOUD_X + FONT_GAP , CLOUD_Y + FONT_GAP);
 
         var maxTimes = getMaxElement(times);
          for(var i = 0; i < players.length; i++) {
@@ -59,8 +63,6 @@ window.renderStatistics = function(ctx, players, times) {
                  ctx.fillStyle = rnd;
              }
         ctx.fillRect(ClOUD_X + (CLOUD_WIDTH / players.length) * i + FONT_GAP, CLOUD_HEIGHT  - FONT_GAP, BAR_WIDTH, -((barHeight * times[i]) / maxTimes));
-
-
     }
 
 
