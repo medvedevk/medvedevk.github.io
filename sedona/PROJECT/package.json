@@ -23,7 +23,7 @@
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "webpack": "^4.19.1"
+    "webpack": "^5.75.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
